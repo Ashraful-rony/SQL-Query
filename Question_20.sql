@@ -1,0 +1,6 @@
+use student_details;
+select 
+student_table.FIRST_NAME,student_table.LAST_NAME,
+scholarship_table.SCHOLARSHIP_AMOUNT,
+scholarship_table.SCHOLARSHIP_DATE from student_table left join 
+scholarship_table on student_table.STUDENT_ID=scholarship_table.STUDENT_REF_ID;
